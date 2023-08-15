@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title Goes Here</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sign-in-modal">
+    <span onclick="removeModal()">&times;</span>
+    <h2 class="form-heading">Sign In To Bootstrap</h2>
+    <form class="input-form" action="">
+      <div class="username-input">
+        <input class="input sign-in-form-input" type="text" placeholder="UserName">
+        <ion-icon name="mail-outline"></ion-icon>
+      </div>
+      <div class="password-input">
+        <input class="input sign-in-form-input" type="password" placeholder="Password">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </div>
+      <a class="sign-in-link" href="/">Don't Have A Account? Sign-up</a>
+      <div class="remember-me">
+        <input type="checkbox"> Remember Me
+      </div>
+      <div class="btn-div">
+        <button class="sign-in-btn form-sign-in">Sign In</button>
+      </div>
+    </form>
+  </div>
+  <div class="nav-bar-container">
+    <div class="nav-bar-wrapper">
+      <div class="nav-bar-left">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcamo.githubusercontent.com%2F84746920d1a9906680c387b3cc8753ee842e996fc8915abd295011e15b594b74%2F68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e312f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67&f=1&nofb=1&ipt=8379b1524398d775e2f1cfa0cc578d68f3052717a69643a55ea6da3f2d300b39&ipo=images" alt="" class="nav-bar-image">
+        <p>Bootstrap</p>
+      </div>
+      <div class="nav-bar-right">
+        <button class="sign-in-btn" onclick="showModal()">Sign In</button>
+        <button class="mode" onclick="showMode()"><ion-icon name="moon-sharp"></ion-icon></button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
