@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title Goes Here</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+  <div class="wrapper"></div>
+  <div class="cover-body"></div>
+  <button class="btn-for-modal" onclick="showModalMsg()">Click for Msg</button>
+  <button class="btn-for-modal" onclick="showModalError()">Click for Error</button>
+  <div class="modal-error">
+    <p class="text">Some Error Occured!</p>
+    <span class="close-btn" onclick="removeModalError()">&times;</span>
+  </div>
+  <div class="modal-msg">
+    <p class="text">Modal Is Working!</p>
+    <span class="close-btn" onclick="removeModalMsg()">&times;</span>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
